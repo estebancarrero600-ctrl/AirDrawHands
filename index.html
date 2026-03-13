@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<title>Air Draw</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<video id="video" autoplay playsinline></video>
+
+<canvas id="bgCanvas"></canvas>
+<canvas id="drawCanvas"></canvas>
+<canvas id="canvas"></canvas>
+
+<div id="statusBox">
+<span id="gestureText">👋 Detectando mano...</span>
+</div>
+
+<div id="toolbar">
+
+<button id="clearBtn">🧹</button>
+<button id="saveBtn">💾</button>
+
+<input type="range" id="brushSize" min="2" max="20" value="6">
+
+</div>
+
+<div id="palette">
+
+<div class="color" style="background:red"></div>
+<div class="color" style="background:orange"></div>
+<div class="color" style="background:yellow"></div>
+<div class="color" style="background:lime"></div>
+<div class="color" style="background:cyan"></div>
+<div class="color" style="background:blue"></div>
+<div class="color" style="background:magenta"></div>
+<div class="color" style="background:white"></div>
+
+</div>
+
+<!-- BOTON FLOTANTE MOVIL -->
+
+<button id="mobileClear">🧹</button>
+
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
